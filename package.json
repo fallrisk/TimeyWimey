@@ -17,13 +17,14 @@
   "license": "ISC",
   "dependencies": {
     "async": "^1.5.1",
+    "debug": "2.2.0",
     "express": "^4.13.3",
     "marked": "^0.3.5",
     "rsvp": "^3.1.0"
   },
   "devDependencies": {
-    "debug": "^2.2.0",
-    "mocha": "^2.3.4"
+    "debug": "2.2.0",
+    "mocha": "2.3.4"
   },
   "engines": {
     "node": "4.2.3"
