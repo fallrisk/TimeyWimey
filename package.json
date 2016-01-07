@@ -23,7 +23,6 @@
     "rsvp": "^3.1.0"
   },
   "devDependencies": {
-    "debug": "2.2.0",
     "mocha": "2.3.4"
   },
   "engines": {
