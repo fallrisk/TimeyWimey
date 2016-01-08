@@ -1,4 +1,5 @@
 var express = require('express');
+var logger = require('morgan');
 var path = require('path');
 var router = express.Router();
 var timestamp = require("./timestamp")
@@ -9,7 +10,8 @@ var path = require("path")
 var marked = require("marked")
 
 var app = express();
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')))
+app.use(logger('dev'))
 
 // Routes
 ////////////////////////////////////////////////////////////////////////////////
