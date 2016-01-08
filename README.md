@@ -1,4 +1,6 @@
 # Timestamp Microservice
+[GitHub Repository](https://github.com/fallrisk/TimeyWimey)
+[Heroku Deployment](https://radiant-meadow-9734.herokuapp.com/)
 
 ## User Stories (Requirements)
 * User Story: I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).
