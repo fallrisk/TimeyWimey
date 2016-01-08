@@ -19,8 +19,10 @@ app.use(logger('dev'))
 router.get("/", function(req, res, next){
   // Render the README file.
   var p = new Promise(function(res, rej){
-    var fileData = fs.readFileSync(path.join(__dirname, "\\README.md"), "utf8")
-    res(fileData)
+    fs.readFile("README.md", "utf8", function(err, data) {
+      if (err) throw err
+      res(data)
+    })
   }).then(function(val){
     res.status(200).send(marked(val.toString()))
   })
